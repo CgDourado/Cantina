@@ -1,0 +1,50 @@
+using static System.Console;
+
+string codigo;
+double soma;
+int qtd = 0;
+double cq = 1.70;
+double bs = 2.30;
+double bco = 2.60;
+double h = 2.40;
+double cb = 2.50;
+double r = 1.00;
+
+WriteLine("Digite o Código do Produto: ");
+codigo = Convert.ToString(ReadLine());
+WriteLine("Digite a Quantidade: ");
+qtd = Convert.ToInt32(ReadLine());
+switch (codigo)
+{
+    case "100":
+        soma = qtd * cq;
+        WriteLine($"Saindo {qtd} Cachorro(s) quente(s)!");
+        WriteLine($"Sua compra saiu Por R$:{soma.ToString("N2")}");
+        break;
+    case "101":
+        soma = qtd * bs;
+        WriteLine($"Saindo {qtd} Bauru(s) Simples!");
+        WriteLine($"Sua compra saiu Por R$:{soma.ToString("N2")}");
+        break;
+    case "102":
+        soma = qtd * bco;
+        WriteLine($"Saindo {qtd} Bauru(s) com Ovo!");
+        WriteLine($"Sua compra saiu Por R$:{soma.ToString("N2")}");
+        break;
+    case "103":
+        soma = qtd * h;
+        WriteLine($"Saindo {qtd} Hamburguer(s)!");
+        WriteLine($"Sua compra saiu Por R$:{soma.ToString("N2")}");
+        break;
+    case "104":
+        soma = qtd * cb;
+        WriteLine($"Saindo {qtd} Cheeseburguer(s)!");
+        WriteLine($"Sua compra saiu Por R$:{soma.ToString("N2")}");
+        break;
+    case "105":
+        soma = qtd * r;
+        WriteLine($"Saindo {qtd} Refrigerante(s)!");
+        WriteLine($"Sua compra saiu Por R$:{soma.ToString("N2")}");
+        break;
+}
+ReadLine();
